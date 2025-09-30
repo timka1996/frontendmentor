@@ -1,0 +1,74 @@
+:root {
+  /* ---------------------------------
+   * Layout
+   * --------------------------------- */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+
+  /* ---------------------------------
+   * Colors
+   * --------------------------------- */
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+
+  /* ---------------------------------
+   * Typography
+   * --------------------------------- */
+  --font-family: "Inter", sans-serif;
+
+  /* Font sizes */
+  --font-size-body: 14px;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Optional line-heights (not in spec but good to define) */
+  --line-height-body: 1.5;
+
+  /* ---------------------------------
+   * Spacing (not in style guide but recommended for consistency)
+   * --------------------------------- */
+  --spacing-100: 4px;
+  --spacing-200: 8px;
+  --spacing-300: 12px;
+  --spacing-400: 16px;
+  --spacing-500: 24px;
+  --spacing-600: 32px;
+  --spacing-700: 48px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-grey-900);
+}
+
+.card {
+  max-width: 384px;
+  background-color: var(--color-grey-800);
+  padding: 40px 0;
+  margin: 0 auto;
+}
